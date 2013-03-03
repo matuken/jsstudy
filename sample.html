@@ -3,19 +3,22 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="Content-Script-Type" content="text/javascript">
 		<title>JavaScript練習用</title>
-		<script language="JavaScript">
-			function print_date(){
-				var d = new Date();
-				document.write("今日は",d.getDate(),"日です");
-		    }	
+		<script src="factor.js">
+		</script>
+		<script src="aplusb.js">
 		</script>
 	</head>
 	<body>
 		<h1>ご挨拶</h1>
-		<p>  こんにちは。
+		<p>  こんにちは。<br>
 		<script language="JavaScript">
 			<!--
-				print_date();
+				document.write("2!=",factor(2),"<br>");
+				document.write("3!=",factor(3),"<br>");
+				document.write("4!=",factor(4),"<br>");
+				document.write("1+2=",aplusb(1,2),"<br>");
+				document.write("2+3=",aplusb(2,3),"<br>");
+				document.write("3+4=",aplusb(3,4),"<br>");
 			// -->
 		</script>
 		</p>
