@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<title>JavaScript練習用</title>
+	</head>
+	<body>
+	<form name="IDPassForm" onsubmit="verify(this);">
+		ID:<input type="text" name="id"><br />
+		Password:<input type="text" name="password"><br />
+		<input type="SUBMIT" value="送信">
+		<script language="JavaScript">
+			<!--
+				function verify(f) {
+					var n = f.length;
+					for(i = 0; i < n ; i++) {
+						var item = f.elements[i];
+						if (itme.type != "text") 
+							alert("not text");
+							continue;
+						if ((item.value == null) || (item.value == "")){
+							window.alert("空のフィールドがあります");
+							return false;
+						} else {
+							alert(item.value);
+						}
+					}
+				}
+			-->
+		</script>
+	</form>
+	</body>
+<html>

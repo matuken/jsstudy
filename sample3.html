@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<title>JavaScript練習用</title>
+	</head>
+	<body>
+		<p>  こんにちは。<br>
+		<script language="JavaScript" type="text/javascript">
+			<!--
+				var dlg = null;
+				function dispDlg(msg) {
+					if ((dlg == null ) || (dlg.closed == true)) {
+						dlg = window.open("sample","MyDialog",
+								"width=300,height=200,resizable");
+						dlg.document.open("text/html");
+					}
+					dlg.document.writeln("<html><body>");
+					dlg.document.writeln(msg);
+					dlg.document.writeln("</body></html>");
+				}
+			// -->
+		</script>
+		</p>
+		<input type="BUTTON" value="Click!" onclick="dispDlg('Hello, JavaScript')">
+
+	</body>
+<html>
