@@ -6,9 +6,8 @@
 	</head>
 	<body>
 		<p>  こんにちは。<br>
-		<input type="text" name="animation" value="Start"/>
-		<input type=button" value="start" onclick="if (timeoutId == null) animate()" />
-		<input type=button" value="stop" onclick="if (timeoutId ) clearTimeout(timeoutId); timeoutId = null" />
+		<input type="button" value="start" onclick="if (timeoutId == null) animate()" />
+		<input type="button" value="stop" onclick="if (timeoutId ) clearTimeout(timeoutId); timeoutId = null" />
 		<script language="JavaScript" type="text/javascript">
 			<!--
 				var image = new Array(5);
@@ -18,7 +17,7 @@
 					image[i] = "Count " + (5 - i);
 				}
 				function animate() {
-					document.animation.value = image[frame];
+					document.write(image[frame]);
 					frame = ++frame % 5;
 					timeoutId = setTimeout("animate()",250);
 				}
