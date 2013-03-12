@@ -1,6 +1,5 @@
 // jQuery test
 $(function () {
 	//code
-	$('.honbun').remove();
-
+	$(document.getElementById("test")).remove();
 });
