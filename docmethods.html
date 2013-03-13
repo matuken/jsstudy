@@ -1,33 +1,23 @@
 <!-- docmethods.html -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Traditional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-traditional.dtd">
-<html xmlns="http://www.w3.org.1999.xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>JavaScriptDOM</title>
 		<script language="JavaScript" type="text/javascript">
 			<!--
-			function SetRight() {
-				// var p0 = document.getElementsByTagName("p") [0];
-				// var label = document.createElement("p");
-				// var text = document.createTextNode("[Hello]");
-				// label.appendChild(text);
-				// p0.appendChild(label);
+			function JustDoIt() {
+				 var p0 = document.getElementsByTagName("p") [0];
+				 var label = document.createElement("p");
+				 var text = document.createTextNode("[Hello]");
+				 label.appendChild(text);
+				 p0.appendChild(label);
 
-				var p1 = document.getElementById("p1");
-				// label = document.createElement("span");
-				// text = document.createTextNode("香織");
-				// label.appendChild(text);
-				// p1.appendChild(label);
-				var alignAttr = document.createAttribute("align") ;
-				alignAttr.nodeValue = "right";
-				p1.setAttributeNode(alignAttr);
-
-			}
-			function SetLeft() {
-				var p1 = document.getElementById("p1");
-				var alignAttr = document.createAttribute("align") ;
-				alignAttr.nodeValue = "left";
-				p1.setAttributeNode(alignAttr);
+				 var p1 = document.getElementById("p1");
+				 label = document.createElement("span");
+				 text = document.createTextNode("香織");
+				 label.appendChild(text);
+				 p1.appendChild(label);
 
 			}
 			-->
@@ -37,9 +27,8 @@
 	<body>
 		<form action="">
 			<p>Dom sample</p>
-			<input type="BUTTON" value="Set right" onclick="SetRight(); " />
-			<input type="BUTTON" value="Set left" onclick="SetLeft(); " />
-			<p id="p1">天井香織</p>
+			<input type="BUTTON" value="Do it" onclick="JustDoIt(); " />
+			<p id="p1">天井</p>
 		</form>
 	</body>
 </html>
