@@ -1,0 +1,27 @@
+<!-- anajax.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Traditional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-traditional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>JavaScript - Ajax</title>
+		<script type="text/javascript" src="./jslib/prototype.js"></script>
+		<script language="JavaScript" type="text/javascript">
+			<!--
+			function replaceText() {
+		    	new Ajax.Updater("p0","abc.txt",{method: "get"}); 
+			}
+			// -->
+		</script>
+
+	</head>
+	<body>
+		<form action="">
+			<p>Dom sample</p>
+			<p id="p0">天井香織</p>
+			<!-- <input type="BUTTON" value="Do it" onclick="new Ajax.Updater('p0','abc.txt', {method: 'get'});"  />-->
+			<input type="BUTTON" value="Do it" onclick="replaceText();"  />
+		</form>
+	</body>
+</html>
+
